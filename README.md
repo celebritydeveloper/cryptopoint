@@ -19,7 +19,7 @@ If you have just cloned this template, you should install the project
 dependencies using the command:
 
 ```Bash
-pnpm install
+npm install
 ```
 
 ## Scripts
