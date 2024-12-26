@@ -35,10 +35,10 @@ This project contains the following scripts:
   the required
   standards.
 
-To run a script, use the `pnpm run` command:
+To run a script, use the `npm run` command:
 
 ```Bash
-pnpm run {script}
+npm run {script}
 # Example: pnpm run build
 ```
 
@@ -58,7 +58,7 @@ process.
 To run the application in the development mode, use the `dev` script:
 
 ```bash
-pnpm run dev
+npm run dev
 ```
 
 After this, you will see a similar message in your terminal:
@@ -99,7 +99,7 @@ To retrieve a link with the HTTPS protocol, consider using the `dev:https`
 script:
 
 ```bash
-$ pnpm run dev:https
+$ npm run dev:https
 
 ▲ Next.js 14.2.3
 - Local:        https://localhost:3000
