@@ -7,8 +7,13 @@ import { useEffect } from "react";
 
 export default function Home() {
   const initData = useLaunchParams()?.initDataRaw || "No initData";
+  // const data = WebApp.initDataUnsafe.user; 
+  // const userId = initData.id.toString()
 
   useEffect(() => {
+    console.log(initData);
+    console.log(initData);
+    
   }, []);
 
   return (
@@ -16,7 +21,8 @@ export default function Home() {
       {/* <Link href={"ton-connect"}>connect </Link> */}
 
       <div className="flex flex-col items-center justify-center h-screen">
-        <h1 className="text-3xl font-bold" onClick={()=>navigator.clipboard.writeText(initData)}>Welcome {initData}</h1>
+        <h1 className="text-3xl font-bold" onClick={()=> {navigator.clipboard.writeText(initData); console.log(initData);
+        }}>Welcome {initData}</h1>
 
 
         <button
