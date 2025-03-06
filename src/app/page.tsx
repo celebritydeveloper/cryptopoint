@@ -24,6 +24,11 @@ export default function Home() {
         <h1 className="text-3xl font-bold" onClick={()=> {navigator.clipboard.writeText(initData); console.log(initData);
         }}>Welco</h1>
 
+        <p>{initData?.user}</p>
+        {/* <p>{initData?.first_name}</p>
+        <p>{initData?.last_name}</p>
+        <p>{initData?.photo_url}</p> */}
+
 
         <button
           onClick={() => {
