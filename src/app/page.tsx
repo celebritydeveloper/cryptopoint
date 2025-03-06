@@ -11,8 +11,6 @@ export default function Home() {
   // const userId = initData.id.toString()
 
   useEffect(() => {
-    const initData = useLaunchParams()?.initDataRaw || "No initData";
-    console.log(initData);
     console.log(initData);
     
   }, []);
@@ -22,7 +20,7 @@ export default function Home() {
       {/* <Link href={"ton-connect"}>connect </Link> */}
 
       <div className="flex flex-col items-center justify-center h-screen">
-        <h1 className="text-3xl font-bold" onClick={()=> {navigator.clipboard.writeText(initData); console.log(initData);
+        <h1 className="text-3xl font-bold cursor-pointer" onClick={()=> {navigator.clipboard.writeText(initData); console.log(initData);
         }}>Welco</h1>
 
         {/* <p>{initData?.first_name}</p>

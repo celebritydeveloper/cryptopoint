@@ -32,7 +32,7 @@ export function init(debug: boolean): void {
 
   // Define components-related CSS variables.
   miniApp.bindCssVars();
-  miniApp.setHeaderColor("#FF0000");
+  miniApp.setHeaderColor('#000000');
   miniApp.setBackgroundColor('#000000');
   miniApp.setBottomBarColor;
   themeParams.bindCssVars();
@@ -41,4 +41,4 @@ export function init(debug: boolean): void {
   debug && import('eruda')
     .then((lib) => lib.default.init())
     .catch(console.error);
-} 
+}
