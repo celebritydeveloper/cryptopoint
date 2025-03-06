@@ -32,8 +32,9 @@ export function init(debug: boolean): void {
 
   // Define components-related CSS variables.
   miniApp.bindCssVars();
-  miniApp.setHeaderColor('#000000');
-  miniApp.setBackgroundColor('#000000');
+  miniApp.setHeaderColor('#ffffff');
+  miniApp.setBottomBarColor('#ffffff');
+  miniApp.setBackgroundColor('#ffffff');
   miniApp.setBottomBarColor;
   themeParams.bindCssVars();
 

@@ -19,7 +19,7 @@ import { init } from "@/core/init";
 
 import "./styles.css";
 import Image from "next/image";
-import logo from "@public/logo.png";
+import logo from "@public/logo_white_icon.jpg";
 
 function RootInner({ children }: PropsWithChildren) {
   const isDev = process.env.NODE_ENV === "development";
@@ -64,7 +64,7 @@ export function Root(props: PropsWithChildren) {
     </ErrorBoundary>
   ) : (
     <div className="root__loading">
-      <Image src={logo} width={150} alt={"App Logo"} />
+      <Image src={logo} alt={"App Logo"} className="h-full w-full object-contain" />
     </div>
   );
 }
