@@ -16,7 +16,7 @@ export default function Home() {
   }, []);
 
   return (
-    <Page back={false}>
+    <Page back={true}>
       {/* <Link href={"ton-connect"}>connect </Link> */}
 
       <div className="flex flex-col items-center justify-center h-screen">
