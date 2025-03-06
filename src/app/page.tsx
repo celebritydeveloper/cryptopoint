@@ -11,6 +11,7 @@ export default function Home() {
   // const userId = initData.id.toString()
 
   useEffect(() => {
+    const initData = useLaunchParams()?.initDataRaw || "No initData";
     console.log(initData);
     console.log(initData);
     
@@ -24,7 +25,6 @@ export default function Home() {
         <h1 className="text-3xl font-bold" onClick={()=> {navigator.clipboard.writeText(initData); console.log(initData);
         }}>Welco</h1>
 
-        <p>{initData?.user}</p>
         {/* <p>{initData?.first_name}</p>
         <p>{initData?.last_name}</p>
         <p>{initData?.photo_url}</p> */}
