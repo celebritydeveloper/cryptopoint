@@ -15,6 +15,11 @@ export default function Home() {
 
   useEffect(() => {
     console.log(initData);
+    console.log(initData.user?.id);
+    console.log(initData.user?.firstName);
+    console.log(initData.user?.lastName);
+    console.log(initData.user?.username);
+    console.log(initData.user?.photoUrl);
     
   }, []);
 
@@ -26,11 +31,11 @@ export default function Home() {
         <h1 className="text-3xl font-bold cursor-pointer" onClick={()=> {console.log(initData);
         }}>Welco</h1>
 
-        {/* <p>{initData?.user?.first_name}</p>
-        <p>{initData?.last_name}</p>
-        <p>{initData?.photo_url}</p> */}
-
-        {/* <p>{user}</p> */}
+        <p>{initData?.user?.firstName}</p>
+        <p>{initData?.user?.lastName}</p>
+        <p>{initData?.user?.username}</p>
+        <p>{initData?.user?.id}</p>
+        <p>{initData?.user?.photoUrl}</p>
 
         <button
           onClick={() => {
