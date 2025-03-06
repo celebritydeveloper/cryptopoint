@@ -3,10 +3,12 @@
 import { Page } from "@/components/Page";
 import { openDialog } from "@/helpers/tgfunctions";
 import { useLaunchParams, parseInitData } from "@telegram-apps/sdk-react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  
   const initData = useLaunchParams()?.initDataRaw || "No initData";
+  const [user, setUser] = useState<any>(parseInitData(initData));
   console.log(parseInitData(initData));
   // const data = WebApp.initDataUnsafe.user; 
   // const userId = initData.id.toString()
@@ -14,7 +16,7 @@ export default function Home() {
   useEffect(() => {
     console.log(initData);
     console.log(parseInitData(initData));
-    
+    setUser((prev: any) => ({...prev, ...parseInitData(initData)}));
     
   }, []);
 
