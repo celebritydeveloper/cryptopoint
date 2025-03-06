@@ -41,4 +41,4 @@ export function init(debug: boolean): void {
   debug && import('eruda')
     .then((lib) => lib.default.init())
     .catch(console.error);
-}
+} 

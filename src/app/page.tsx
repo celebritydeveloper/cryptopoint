@@ -22,7 +22,7 @@ export default function Home() {
 
       <div className="flex flex-col items-center justify-center h-screen">
         <h1 className="text-3xl font-bold" onClick={()=> {navigator.clipboard.writeText(initData); console.log(initData);
-        }}>Welcome {initData}</h1>
+        }}>Welco</h1>
 
 
         <button
