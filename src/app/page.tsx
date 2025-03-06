@@ -30,7 +30,7 @@ export default function Home() {
 
         <button
           onClick={() => {
-            openDialog("Watch ads!", "new", "ok");
+            openDialog("Watch ads!", initData, "ok");
           }}
           className="mt-8 px-4 py-2 text-white bg-blue-500 rounded-md"
         >
