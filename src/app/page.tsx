@@ -3,9 +3,11 @@
 import { Page } from "@/components/Page";
 import { openDialog } from "@/helpers/tgfunctions";
 import { useLaunchParams, parseInitData } from "@telegram-apps/sdk-react";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export default function Home() {
+  const router = useRouter();
   
   const initData = parseInitData(useLaunchParams()?.initDataRaw) || "No initData";
   console.log(initData);
@@ -39,7 +41,7 @@ export default function Home() {
 
         <button
           onClick={() => {
-            openDialog("Watch ads!", "This you", "ok");
+            router.push("/onboarding")
           }}
           className="mt-8 px-4 py-2 text-white bg-blue-500 rounded-md"
         >
