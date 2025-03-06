@@ -70,13 +70,13 @@ export default function Onboarding() {
 
   useEffect(() => {
     (async () => {
-      const auth = JSON.parse(localStorage.getItem("point-splash"));
-      if(auth == null || !auth.opened) {
-        setIsAuthenticated(false);
-      } else {
-        setIsAuthenticated(true);
-        router.push("/index");
-      }
+      //const auth = JSON.parse(localStorage.getItem("point-splash"));
+      // if(auth == null || !auth.opened) {
+      //   setIsAuthenticated(false);
+      // } else {
+      //   setIsAuthenticated(true);
+      //   router.push("/index");
+      // }
     })();
   }, [isAuthenticated]);
 
