@@ -17,6 +17,7 @@ export default function Home() {
     console.log(initData);
     console.log(parseInitData(initData));
     setUser((prev: any) => ({...prev, ...parseInitData(initData)}));
+    console.log(user);
     
   }, []);
 
@@ -31,6 +32,8 @@ export default function Home() {
         {/* <p>{initData?.user?.first_name}</p>
         <p>{initData?.last_name}</p>
         <p>{initData?.photo_url}</p> */}
+
+        <p>{user}</p>
 
         <button
           onClick={() => {
